@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Calculator</title>
+     <link rel = "icon" href="icons8-calculator-64.png" >
+    <style>
+        *{
+            padding-top: 15px;
+            margin: 0px;
+}
+        body{
+        
+          background: linear-gradient(to bottom, #003366 0%, #cc0066 100%);
+}
+        
+        .main-content{ 
+             width: 400px;
+            margin: 0 auto;
+
+}
+        
+    
+        .button{
+                font-size: 25px;
+            width: 50px;
+            height: 50px;
+            padding: 25px 32px;
+            text-align: center;
+            background: blue;
+            
+            
+}
+         
+        input[type=text]
+        {
+            width: 280px;
+}
+        
+        .main-content{
+        
+          
+            padding-bottom: 30px;
+            border: 5px black solid;
+            border-radius: 15px;
+            padding-left: 80px;
+            border-color: cornflowerblue;
+            
+}
+           footer {
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+           
+            color: white;
+            height: 90px;
+            
+            
+}
+        #link{
+            float: left;
+
+}
+        a{
+         text-decoration: none;
+            color: white;
+        }
+        
+        #resultBox{
+         font-size: 30px;
+}
+        #link{
+            padding: 5px;
+}
+       
+    </style>
+    
+            </head>
+            <body>
+              
+                <center><h1 style="font-size: 40px;">
+                     <a  href="https://www.youtube.com/channel/UCcXIYdkL8pplaJVoW-W6jVg?view_as=subscriber" 
+                     target="_blank"> Calculator</a> </h1></center> 
+               <div class="main-content">
+                <form name="myform"> <input  type="text" id="resultBox" name="text-display">
+                   <table>
+                <tr>
+                   <td> <input  class="button" type="button" name="" value="1"  onclick="displayText('1')"></td>
+                   <td> <input class="button" type="button" name="" value="2" onclick="displayText('2')" ></td>
+                <td> <input class="button" type="button" name="" value="3" onclick="displayText('3')"></td>
+                 <td> <input style="background: red;" class="button" type="button" name="" value="C" onclick="clrText()"
+                             ></td>
+
+                   </tr>
+
+
+
+                       <tr>
+                        <td> <input class="button" type="button" name="" value="4" onclick="displayText('4')"></td>
+                   <td> <input class="button" type="button" name="" value="5" onclick="displayText('5')"></td>
+                <td> <input class="button" type="button" name="" value="6" onclick="displayText('6')"></td>
+                <td> <input style="background-color: grey;" class="button" type="button" name="" value="-" onclick="displayText('-')"></td>
+
+                       </tr>
+
+
+
+                   <tr>
+
+
+                        <td> <input class="button" type="button" name="" value="7" onclick="displayText('7')"></td>
+                   <td> <input class="button" type="button" name="" value="8" onclick="displayText('8')"></td>
+                <td> <input class="button" type="button" name="n" value="9" onclick="displayText('9')"></td>
+                       <td> <input style="background-color: grey;" class="button" type="button" name="" value="/" onclick="displayText('/')"></td>
+
+
+
+                       </tr>
+   <tr>
+                    
+                   <td> <input class="button" type="button" name="" value="0" onclick="displayText('0')"></td>
+                <td> <input style="background-color: grey;" class="button" type="button" name="" value="="
+                             onclick="Calculate()"></td>
+                       <td> <input style="background-color: grey;" class="button" type="button" name="" value="*" onclick="displayText('*')"></td>   
+       <td> <input style="background-color: grey;" class="button" type="button" name="" value="+" onclick="displayText('+')"></td>
+</tr>
+                </table>
+                </form>
+
+
+                </div>
+                <br><br><br>
+            <footer style="background:">
+                
+                <p style="margin-left: 20px;padding: 0 5px 3px 0; font-size: 20px;">
+                <script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe" data-channelid="UCcXIYdkL8pplaJVoW-W6jVg" data-layout="full" data-theme="dark" data-count="hidden"></div>
+                    
+                    
+                    Developed By Sohana Afroz  copyrights: &copy; 2020 </p>
+                
+                
+                
+             
+                </footer>
+
+
+
+                <script>
+
+      
+                        function clrText()
+                        {
+                    document.getElementById("resultBox").value="";
+            }
+
+                    function displayText(val) 
+                     { 
+                         document.getElementById("resultBox").value+=val;
+                     } 
+                    
+                    
+                    function Calculate()
+                    {
+                         
+                      
+                document.getElementById("resultBox").value =  eval(document.getElementById("resultBox").value);
+
+}
+                </script>
+            </body>
+        </html>
